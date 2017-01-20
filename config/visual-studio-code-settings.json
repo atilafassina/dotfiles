@@ -1,0 +1,8 @@
+{
+  "editor.fontFamily": "Monaco",
+  "window.openFilesInNewWindow": false,
+  "workbench.statusBar.visible": true,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": true
+}

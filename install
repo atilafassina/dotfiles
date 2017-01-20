@@ -13,6 +13,13 @@ fi
 # link ~/.gitconfig
 ln -s $DIR/config/.gitconfig ~/.gitconfig
 
+if [ -d ~/.oh-my-zsh/custom/plugins/git-open ]; then
+  rm -rfv ~/.oh-my-zsh/custom/plugins/git-open
+fi
+# clone/install git-open
+git clone git@github.com:paulirish/git-open.git ~/.oh-my-zsh/custom/plugins/git-open
+
+
 # Hyper app
 if [ -f ~/.hyper.js ]; then
   rm -fv ~/.hyper.js
