@@ -1,0 +1,26 @@
+echo "- - - -"
+echo "Setup system  🚀"
+echo "- - - -"
+
+# get current location
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+# GIT
+if [ -f ~/.gitconfig ]; then
+  rm ~/.gitconfig
+fi
+
+# link ~/.gitconfig
+ln -s $DIR/config/.gitconfig ~/.gitconfig
+
+# Hyper app
+if [ -f ~/.hyper.js ]; then
+  rm -fv ~/.hyper.js
+fi
+
+# symlink Hyper app config file
+ln -sv $DIR/config/.hyper.js ~/.hyper.js
+
+bash $DIR/zsh.sh
+bash $DIR/os.sh
+bash $DIR/cask.sh
