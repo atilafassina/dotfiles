@@ -1,6 +1,25 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/atila/.oh-my-zsh
 
+# other bullet-train prompt options
+# context
+# perl
+# ruby
+# virtualenv
+# nvm
+# go
+# hg
+# - - - - - - - - - - - - - - - - -
+
+BULLETTRAIN_PROMPT_ORDER=(
+time
+custom
+dir
+git
+cmd_exec_time
+)
+
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -36,7 +55,7 @@ ZSH_THEME="bullet-train"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
