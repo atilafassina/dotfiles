@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/atila/.oh-my-zsh
+export ZSH=/Users/atilafassina/.oh-my-zsh
 
 # other bullet-train prompt options
 # context
@@ -99,15 +99,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 export GOPATH=$HOME/work
-
-alias fe-mount="sudo mount_nfs -o resvport 192.168.50.26:/home/atila /Users/atila/Development/mount"
-alias fe-umount="sudo umount /Users/atila/Development/mount"
-alias newmount="sudo mount -t nfs -o resvport,rw,noatime,soft,intr,rsize=32768,wsize=32768,timeo=900,retrans=3,proto=tcp,vers=3,async 192.168.50.26:/home/atila /Users/atila/Development/mount"
-alias fe-login="ssh atila@frontend.econacampus.com"
-alias go-box="cd /Users/atila/econa/vagrant-dev/econavagrant/box"
-alias cp-handoff="cp -a ~/Development/reveal.js ~/Development/mount/www/handoff"
-
-export PATH="$HOME/.yarn/bin:$PATH"
-export NPM_CONFIG_PREFIX="/usr/local"
