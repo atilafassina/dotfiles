@@ -1,3 +1,21 @@
 [user]
 	name = Atila Fassina
 	email = hey@atilafassina.com
+
+[color]
+				diff = auto
+				status = auto
+				branch = auto
+				ui = auto
+
+[alias]
+	l = log --graph --abbrev-commit --stat --pretty=fuller --decorate
+
+[rebase]                                                                                                                                          
+        autosquash = true
+
+[branch]
+        autosetuprebase = always
+				
+[push]
+        default = current

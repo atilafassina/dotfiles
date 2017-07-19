@@ -19,13 +19,32 @@ git
 cmd_exec_time
 )
 
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stampts section
+  user          # Username section
+  host          # Hostname section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  node          # Node.js section
+  #docker
+  #golang        # Go section
+  #php           # PHP section
+  #pyenv         # Pyenv section
+  #exec_time     # Execution time
+  line_sep      # Line break
+  #vi_mode       # Vi-mode indicator
+  char          # Prompt character
+)
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="miloshadzic"
-ZSH_THEME="bullet-train"
+# ZSH_THEME="materialshell-electro"
+ZSH_THEME="materialshell"
+# ZSH_THEME="spaceship"
+# ZSH_THEME="bullet-train"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -72,7 +91,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-
+source .simplesurance
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -99,6 +118,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export GOPATH=$HOME/work
+export PATH="$HOME/.yarn/bin:$PATH"
+export NPM_CONFIG_PREFIX="/usr/local"
 
 alias dock-spacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'"

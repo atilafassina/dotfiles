@@ -1,10 +1,15 @@
 {
-  "editor.fontFamily": "Monaco",
-  "window.openFilesInNewWindow": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "window.openFilesInNewWindow": "off",
   "workbench.statusBar.visible": true,
   "editor.tabSize": 2,
-  "files.trimTrailingWhitespace": true,
-  "editor.renderWhitespace": true,
+  "files.trimTrailingWhitespace": false,
   "window.zoomLevel": 0,
-  "editor.wordWrap": true
+  "editor.wordWrap": "off",
+  "workbench.editor.showTabs": true,
+  "window.title": "${folder}",
+  "workbench.colorTheme": "Ayu Dark"
 }
