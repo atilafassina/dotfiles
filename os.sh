@@ -38,3 +38,6 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 echo "Disable the “Are you sure you want to open this application?” dialog"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+echo "Disable smart quotes"
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
