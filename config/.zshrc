@@ -91,7 +91,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source .simplesurance
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -122,3 +121,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export NPM_CONFIG_PREFIX="/usr/local"
 
 alias dock-spacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'"
+
+# Adding autocomplete for 'we'
+[ -f ~/.we_autocomplete ] && source ~/.we_autocomplete

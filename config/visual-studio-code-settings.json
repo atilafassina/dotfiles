@@ -11,5 +11,11 @@
   "editor.wordWrap": "off",
   "workbench.editor.showTabs": true,
   "window.title": "${folder}",
-  "workbench.colorTheme": "Ayu Dark"
+  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorCustomizations": {
+    "sideBar.foreground": "#ccc",
+    "tab.inactiveForeground": "#bbb",
+    "tab.activeForeground": "#fff"
+  },
+  "workbench.iconTheme": "material-icon-theme"
 }

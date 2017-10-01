@@ -27,7 +27,18 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: `x-row > span { line-height: 1.4; }`,
+    termCSS: `
+    x-row > span {
+      line-height: 1.4;
+    }
+      x-screen a {
+      color: #33ff00;
+    }
+
+    x-screen a.hover {
+      text-decoration: none;
+    }
+    `,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -40,7 +51,7 @@ module.exports = {
       red: '#ff0000',
       green: '#33ff00',
       yellow: '#ffff00',
-      blue: 'rgb(40, 110, 230)',
+      blue: 'rgb(120, 170, 250)',
       magenta: '#cc00ff',
       cyan: '#00ffff',
       white: '#d0d0d0',
@@ -84,7 +95,8 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   // plugins: ["hyperterm-material"],
-  plugins: ['hyper-materialshell'],
+  plugins: ['hyper-materialshell', 'hyperlinks'],
+
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
