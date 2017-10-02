@@ -1,6 +1,6 @@
 # .dotfiles config
 
-> heavily inspired on the [.dotfiles config](https://github.com/stefanjudis/.dotfiles) by @stefanjudis
+> inspired by [.dotfiles config](https://github.com/mathiasbynens/dotfiles) by @mathiasbynens
 
 Dependencies:
 - [Brew](http://brew.sh/)
