@@ -3,19 +3,43 @@
 	email = atila@fassina.eu
 
 [color]
-				diff = auto
-				status = auto
-				branch = auto
-				ui = auto
-
-[alias]
-	l = log --graph --abbrev-commit --stat --pretty=fuller --decorate
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
 
 [rebase]                                                                                                                                          
-        autosquash = true
+  autosquash = true
 
 [branch]
-        autosetuprebase = always
-				
+  autosetuprebase = always
+
+[transfer]
+  fsckobjects = true
+
+[fetch]
+  fsckobjects = true
+
+[receive]
+  fsckObjects = true
+
+# Ensure `git push` only pushes the current branch against its counterpart on
+# the remote repository (mandatory)
 [push]
-        default = current
+  default = current
+
+# Ensure casing inconsistencies are not handled silently by Git (mandatory)
+[core]
+  ignoreCase = false
+
+[alias]
+  # Protect all remote refs about to be updated by requiring their current value
+  # to be the same as the remote-tracking branch we have for them (recommended)
+  force = push --force-with-lease
+
+  # clean all branches that have been merged to develop
+  cbranch = "!f() { git checkout \"$1\" && git branch --merged >/tmp/merged-branches && vim /tmp/merged-branches && xargs git branch -d </tmp/merged-branches; }; f"  
+
+  # short status
+  s = status -s
+[init]

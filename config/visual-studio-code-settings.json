@@ -1,21 +1,78 @@
 {
+  "editor.cursorBlinking": "blink",
+  "editor.cursorStyle": "underline",
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "window.openFilesInNewWindow": "off",
-  "workbench.statusBar.visible": true,
   "editor.tabSize": 2,
-  "files.trimTrailingWhitespace": false,
   "window.zoomLevel": 0,
+  "files.trimTrailingWhitespace": true,
   "editor.wordWrap": "off",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.tabSizing": "shrink",
   "workbench.editor.showTabs": true,
-  "window.title": "${folder}",
-  "workbench.colorTheme": "Ayu Dark",
+  "window.title": "${dirty}${separator}${activeEdtiorMedium}",
+  "workbench.colorTheme": "lucy",
+  "editor.formatOnSave": false,
+  "editor.trimAutoWhitespace": false,
+  "prettier.eslintIntegration": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
     "sideBar.foreground": "#ccc",
     "tab.inactiveForeground": "#bbb",
-    "tab.activeForeground": "#fff"
+    "tab.activeForeground": "#fff",
+    "activityBarBadge.background": "#388E3C",
+    "list.activeSelectionForeground": "#388E3C",
+    "list.inactiveSelectionForeground": "#388E3C",
+    "list.highlightForeground": "#388E3C",
+    "scrollbarSlider.activeBackground": "#388E3C50",
+    "editorSuggestWidget.highlightForeground": "#388E3C",
+    "textLink.foreground": "#388E3C",
+    "progressBar.background": "#388E3C",
+    "pickerGroup.foreground": "#388E3C",
+    "tab.activeBorder": "#388E3C",
+    "notificationLink.foreground": "#388E3C",
+    "editorWidget.border": "#388E3C",
+    "editorWidget.resizeBorder": "#388E3C",
+    "settings.modifiedItemIndicator": "#388E3C",
+    "settings.headerForeground": "#388E3C",
+    "panelTitle.activeBorder": "#388E3C",
+    "breadcrumb.activeSelectionForeground": "#388E3C",
+    "menu.selectionForeground": "#388E3C",
+    "menubar.selectionForeground": "#388E3C"
+
   },
-  "workbench.iconTheme": "material-icon-theme"
+  "[markdown]": {
+    // use the beautiful duospace font when available
+    "editor.fontFamily": "iA Writer Duospace, monospace",
+    // enable word wrap, since horizontal scroll while writing isn't human
+    "editor.wordWrap": "on",
+    // i don't need line numbers, i'm not coding
+    "editor.lineNumbers": "off",
+    // i don't need rules, i'm not coding
+    "editor.rulers": [],
+    // larger text, to improve focus on writing
+    "editor.fontSize": 16,
+    // more comfortable line height
+    "editor.lineHeight": 25,
+    // disable editor suggestions based on previous words
+    "editor.quickSuggestions": false,
+    // prettier stuff
+    "editor.formatOnSave": true
+  },
+  "workbench.iconTheme": "eq-material-theme-icons-ocean",
+  "files.defaultLanguage": "javascript",
+  "materialTheme.accent": "Breaking Bad",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "color-highlight.markerType": "underline",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true
 }

@@ -12,7 +12,7 @@ module.exports = {
     cursorColor: 'rgba(230,230,230,.6)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'UNDERLINE',
 
     // color of the text
     foregroundColor: '#fff',
@@ -21,7 +21,7 @@ module.exports = {
     backgroundColor: '#000',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#eee',
 
     // custom css to embed in the main window
     css: '',
@@ -95,7 +95,11 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   // plugins: ["hyperterm-material"],
-  plugins: ['hyper-materialshell', 'hyperlinks'],
+  plugins: ['hyper-materialshell', 'hyperlinks', 'hypercwd'],
+  
+  hypercwd: {
+    initialWorkingDirectory: '~/Documents'
+  },
 
 
   // in development, you can create a directory under

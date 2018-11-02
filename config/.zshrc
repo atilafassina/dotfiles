@@ -84,6 +84,8 @@ HIST_STAMPS="yyyy-mm-dd"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins+=(zsh-nvm)
+plugins+=(zsh-autosuggestions)
 
 # User configuration
 
@@ -118,9 +120,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$HOME/.yarn/bin:$PATH"
-export NPM_CONFIG_PREFIX="/usr/local"
 
 alias dock-spacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'"
+alias web="cd ~/Documents/n26/goldfish && npm start website"
+alias goldfish="cd ~/Documents/n26/goldfish"
+
+alias gs="git status -s"
+alias gr="git fetch && git rebase origin/develop"
 
 # Adding autocomplete for 'we'
 [ -f ~/.we_autocomplete ] && source ~/.we_autocomplete
