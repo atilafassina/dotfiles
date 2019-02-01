@@ -1,8 +1,8 @@
 {
   "editor.cursorBlinking": "blink",
   "editor.cursorStyle": "underline",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code, Iosevka",
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "window.openFilesInNewWindow": "off",
@@ -14,7 +14,7 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.showTabs": true,
   "window.title": "${dirty}${separator}${activeEdtiorMedium}",
-  "workbench.colorTheme": "lucy",
+  "workbench.colorTheme": "Night Owl",
   "editor.formatOnSave": false,
   "editor.trimAutoWhitespace": false,
   "prettier.eslintIntegration": true,
@@ -74,5 +74,8 @@
   },
   "workbench.startupEditor": "newUntitledFile",
   "color-highlight.markerType": "underline",
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true
 }

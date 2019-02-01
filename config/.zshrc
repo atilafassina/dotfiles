@@ -13,33 +13,17 @@ export ZSH=/Users/atilafassina/.oh-my-zsh
 
 BULLETTRAIN_PROMPT_ORDER=(
 time
-custom
+#custom
 dir
 git
-cmd_exec_time
-)
-
-SPACESHIP_PROMPT_ORDER=(
-  time          # Time stampts section
-  user          # Username section
-  host          # Hostname section
-  dir           # Current directory section
-  git           # Git section (git_branch + git_status)
-  node          # Node.js section
-  #docker
-  #golang        # Go section
-  #php           # PHP section
-  #pyenv         # Pyenv section
-  #exec_time     # Execution time
-  line_sep      # Line break
-  #vi_mode       # Vi-mode indicator
-  char          # Prompt character
+#cmd_exec_time
 )
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+# ZSH_THEME="honukai"
 # ZSH_THEME="miloshadzic"
 # ZSH_THEME="materialshell-electro"
 ZSH_THEME="materialshell"
@@ -126,7 +110,6 @@ alias web="cd ~/Documents/n26/goldfish && npm start website"
 alias goldfish="cd ~/Documents/n26/goldfish"
 
 alias gs="git status -s"
-alias gr="git fetch && git rebase origin/develop"
 
 # Adding autocomplete for 'we'
 [ -f ~/.we_autocomplete ] && source ~/.we_autocomplete
