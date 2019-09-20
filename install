@@ -5,6 +5,9 @@ echo "- - - -"
 # get current location
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # GIT
 if [ -f ~/.gitconfig ]; then
   rm ~/.gitconfig
@@ -12,13 +15,6 @@ fi
 
 # link ~/.gitconfig
 ln -s $DIR/config/.gitconfig ~/.gitconfig
-
-# if [ -d ~/.oh-my-zsh/custom/plugins/git-open ]; then
-#   rm -rfv ~/.oh-my-zsh/custom/plugins/git-open
-# fi
-# clone/install git-open
-# git clone git@github.com:paulirish/git-open.git ~/.oh-my-zsh/custom/plugins/git-open
-
 
 # Hyper app
 if [ -f ~/.hyper.js ]; then
@@ -28,6 +24,10 @@ fi
 # symlink Hyper app config file
 ln -sv $DIR/config/.hyper.js ~/.hyper.js
 
+# symlink NVIM
+ln -sv $DIR/config/nvim ~/.config/nvim
+
 bash $DIR/zsh.sh
 bash $DIR/os.sh
+bash $DIR/brew.sh
 bash $DIR/cask.sh

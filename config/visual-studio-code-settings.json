@@ -1,8 +1,7 @@
 {
   "editor.cursorBlinking": "blink",
-  "editor.cursorStyle": "underline",
-  "editor.fontFamily": "Fira Code, Iosevka",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "Dank Mono, Fira Code, Iosevka, Monoid",
+  "editor.fontSize": 18,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "window.openFilesInNewWindow": "off",
@@ -15,26 +14,27 @@
   "workbench.editor.showTabs": true,
   "window.title": "${dirty}${separator}${activeEdtiorMedium}",
   "workbench.colorTheme": "Night Owl",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.trimAutoWhitespace": false,
+  "prettier.tslintIntegration": false,
   "prettier.eslintIntegration": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
     "sideBar.foreground": "#ccc",
     "tab.inactiveForeground": "#bbb",
     "tab.activeForeground": "#fff",
-    "activityBarBadge.background": "#388E3C",
-    "list.activeSelectionForeground": "#388E3C",
-    "list.inactiveSelectionForeground": "#388E3C",
-    "list.highlightForeground": "#388E3C",
-    "scrollbarSlider.activeBackground": "#388E3C50",
-    "editorSuggestWidget.highlightForeground": "#388E3C",
-    "textLink.foreground": "#388E3C",
-    "progressBar.background": "#388E3C",
-    "pickerGroup.foreground": "#388E3C",
+    // "activityBarBadge.background": "#388E3C",
+    // "list.activeSelectionForeground": "#388E3C",
+    // "list.inactiveSelectionForeground": "#388E3C",
+    // "list.highlightForeground": "#388E3C",
+    // "scrollbarSlider.activeBackground": "#388E3C50",
+    // "editorSuggestWidget.highlightForeground": "#388E3C",
+    // "textLink.foreground": "#388E3C",
+    // "progressBar.background": "#388E3C",
+    // "pickerGroup.foreground": "#388E3C",
     "tab.activeBorder": "#388E3C",
     "notificationLink.foreground": "#388E3C",
-    "editorWidget.border": "#388E3C",
+    // "editorWidget.border": "#388E3C",
     "editorWidget.resizeBorder": "#388E3C",
     "settings.modifiedItemIndicator": "#388E3C",
     "settings.headerForeground": "#388E3C",
@@ -42,7 +42,6 @@
     "breadcrumb.activeSelectionForeground": "#388E3C",
     "menu.selectionForeground": "#388E3C",
     "menubar.selectionForeground": "#388E3C"
-
   },
   "[markdown]": {
     // use the beautiful duospace font when available
@@ -62,20 +61,87 @@
     // prettier stuff
     "editor.formatOnSave": true
   },
-  "workbench.iconTheme": "eq-material-theme-icons-ocean",
   "files.defaultLanguage": "javascript",
-  "materialTheme.accent": "Breaking Bad",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
   "[javascript]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "workbench.startupEditor": "newUntitledFile",
-  "color-highlight.markerType": "underline",
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.preferences.quoteStyle": "single",
   "javascript.preferences.quoteStyle": "single",
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.external.osxExec": "hyper.app",
+  "terminal.integrated.fontSize": 16,
+  "vscode_custom_css.imports": [
+    "file:///Users/atilafassina/Documents/synthwave84.css"
+  ],
+  "editor.minimap.maxColumn": 80,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.statusBar.visible": false,
+  "debug.showInStatusBar": "never",
+  "color-highlight.markerType": "underline",
+  "hemingway.enabled": false,
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "terminal.integrated.rendererType": "dom",
+  "prettier.semi": false,
+  "terminal.integrated.cursorStyle": "line"
 }
