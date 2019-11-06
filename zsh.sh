@@ -24,5 +24,5 @@ if [ -f ~/.oh-my-zsh/themes/bullet-train.zsh-theme ]; then
 fi
 
 # symlink theme file
-ln -sv $DIR/config/bullet-train.zsh-theme ~/.oh-my-zsh/themes/bullet-train.zsh-theme
+ln -sv $DIR/config/custom-material-theme.zsh-theme ~/.oh-my-zsh/themes/material-shell.zsh-theme
 # cp $DIR/config/bullet-train.zsh-theme ~/.oh-my-zsh/themes/bullet-train.zsh-theme
